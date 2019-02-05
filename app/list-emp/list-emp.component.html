@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Firstname</th>
+        <th scope="col">Date</th>
+
+      </tr>
+    </thead>
+      <tbody>
+      <tr *ngFor="let emp of empList; let i=index" itemscope="row">
+        <td scope="col">{{ i + 1}}</td>
+        <td scope="col">{{ emp.empName }}</td>
+        <td scope="col">{{ emp.empDate | date: 'dd/MM/yyyy' }}</td>
+
+      </tr>
+      </tbody>
+    </table>
+  </div>
+

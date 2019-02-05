@@ -1,0 +1,21 @@
+.spinner {
+  border: 6px solid lightblue;
+  border-top: 6px solid black;
+  border-radius: 40%;
+  animation: spin 20ms linear infinite;
+  top: 25%;
+  left: 25%;
+  position: absolute;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+.disableCss {
+  background: #dddddd;
+  font-size: medium;
+  color: lightgrey;
+  font-weight: normal;
+}
